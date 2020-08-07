@@ -50,41 +50,26 @@ function CadastroCategoria() {
       >
 
         {/* NOME DA CATEGORIA */}
+
         <FormField
           label="Nome da Categoria"
-          type="text"
+          // type="text"
           name="nome"
           value={values.nome}
           onChange={apagaInputInicial}
         />
 
         {/* DESCRIÇÃO DA CATEGORIA */}
+
         <FormField
           label="Descrição da Categoria"
-          textfild="textfild"
+          type="textarea"
           name="descricao"
           value={values.descricao}
           onChange={apagaInputInicial}
         />
 
-        {/*
-          <div>
-          <label>
-          {/* DESCRIÇÃO DA CATEGORIA */}
-        {/*
-          Descrição
-          <textarea
-          type="text"
-          value={values.descricao}
-          name="descricao"
-          onChange={apagaInputInicial}
-          />
-          </label>
-          </div>
-
-          /*}
-
-          {/* COR DA CATEGORIA */}
+        {/* COR DA CATEGORIA */}
         <FormField
           label="Cor"
           type="color"
