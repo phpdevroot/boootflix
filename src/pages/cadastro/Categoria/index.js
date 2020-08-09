@@ -34,8 +34,9 @@ function CadastroCategoria() {
 
   //ADICIONANDO EFEITOS AO CARREGAR PAGINA
     useEffect(() => {
-      console.log('Verificando resultado');
-      const URL_TOP = 'http://localhost:8080/categorias';
+      const URL_TOP = window.location.hostname.includes('localhost')
+        ? 'http://localhost:8080/categorias'
+        : 'https://boootflix.herokuapp.com/categorias';
       fetch(URL_TOP)
         .then(async (respostaDoServidor) => {
           const resposta = await respostaDoServidor.json();
