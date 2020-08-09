@@ -34,7 +34,7 @@ function CadastroCategoria() {
 
   //ADICIONANDO EFEITOS AO CARREGAR PAGINA
     useEffect(() => {
-      console.log('VErificando resultado');
+      console.log('Verificando resultado');
       const URL_TOP = 'http://localhost:8080/categorias';
       fetch(URL_TOP)
         .then(async (respostaDoServidor) => {
